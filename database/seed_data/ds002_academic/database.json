@@ -1,0 +1,50 @@
+[
+  {
+    "id": "db-001",
+    "category": "Database Systems",
+    "topic": "Database Normalization",
+    "difficulty": "intermediate",
+    "content": "Normalization is the process of organizing a relational database's tables to reduce redundancy and avoid update anomalies. First Normal Form (1NF) requires each column to hold atomic (indivisible) values and each row to be unique. Second Normal Form (2NF) requires 1NF plus every non-key column depending on the whole primary key, not just part of it (relevant for composite keys). Third Normal Form (3NF) requires 2NF plus no non-key column depending on another non-key column (no 'transitive' dependency). In practice, most well-designed application databases aim for 3NF, occasionally denormalizing specific tables later for read performance.",
+    "example": "Unnormalized: one Orders table with customer_name and customer_address repeated on every row.\n\nNormalized (3NF): \nCustomers(customer_id PK, customer_name, customer_address)\nOrders(order_id PK, customer_id FK, order_date)\n\nNow customer info is stored once, and Orders references it by customer_id.",
+    "quiz": [
+      {"type": "mcq", "question": "What does 1NF require?", "options": ["No duplicate tables", "Atomic column values and unique rows", "A foreign key on every table", "No indexes"], "answer": "Atomic column values and unique rows"},
+      {"type": "short_answer", "question": "What problem does normalization primarily solve?", "answer": "Data redundancy and update anomalies (having to change the same fact in multiple places)."}
+    ],
+    "keywords": ["normalization", "1nf", "2nf", "3nf", "database design", "redundancy"],
+    "related_topics": ["ER Diagrams", "Primary Keys", "Foreign Keys"],
+    "references": ["Database System Concepts, Silberschatz et al., Ch. 8"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "db-002",
+    "category": "Database Systems",
+    "topic": "SQL Joins",
+    "difficulty": "intermediate",
+    "content": "A JOIN combines rows from two or more tables based on a related column, typically a foreign key. INNER JOIN returns only rows with matches in both tables. LEFT JOIN returns all rows from the left table, with NULLs where there's no match in the right table. RIGHT JOIN is the mirror of LEFT JOIN. FULL OUTER JOIN returns all rows from both tables, matched where possible. Choosing the right join type is a common source of bugs — an INNER JOIN silently drops unmatched rows, which is sometimes exactly what you want and sometimes a bug.",
+    "example": "SELECT students.name, courses.title\nFROM students\nINNER JOIN enrollments ON students.id = enrollments.student_id\nINNER JOIN courses ON enrollments.course_id = courses.id;\n\n-- LEFT JOIN to include students with no enrollments:\nSELECT students.name, courses.title\nFROM students\nLEFT JOIN enrollments ON students.id = enrollments.student_id\nLEFT JOIN courses ON enrollments.course_id = courses.id;",
+    "quiz": [
+      {"type": "mcq", "question": "Which join returns all rows from the left table even without a match?", "options": ["INNER JOIN", "LEFT JOIN", "CROSS JOIN", "SELF JOIN"], "answer": "LEFT JOIN"},
+      {"type": "true_false", "question": "An INNER JOIN can return fewer rows than either of the two tables being joined.", "answer": true}
+    ],
+    "keywords": ["sql", "joins", "inner join", "left join", "queries"],
+    "related_topics": ["Database Normalization", "Foreign Keys"],
+    "references": ["Database System Concepts, Silberschatz et al., Ch. 3"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "db-003",
+    "category": "Database Systems",
+    "topic": "Indexes",
+    "difficulty": "advanced",
+    "content": "A database index is a separate data structure (commonly a B-tree) that speeds up lookups on a column, at the cost of extra storage and slower writes (the index must be updated on every insert/update/delete). Without an index, finding a row requires a full table scan — O(n). With an index, lookups approach O(log n). Primary keys are indexed automatically in most databases; other frequently-filtered or joined-on columns are good index candidates. Over-indexing is a real cost: every index makes writes slower, so index deliberately, not everything.",
+    "example": "-- Speeds up lookups by email\nCREATE INDEX idx_users_email ON users(email);\n\n-- Now this query uses the index instead of scanning every row:\nSELECT * FROM users WHERE email = 'ada@example.com';",
+    "quiz": [
+      {"type": "mcq", "question": "What's the main tradeoff of adding an index?", "options": ["Faster reads, slower writes", "Faster writes, slower reads", "No tradeoff", "Reduces storage"], "answer": "Faster reads, slower writes"},
+      {"type": "short_answer", "question": "What data structure do most database indexes use internally?", "answer": "A B-tree (or a variant of one)."}
+    ],
+    "keywords": ["indexes", "b-tree", "query performance", "database optimization"],
+    "related_topics": ["SQL Joins", "Database Normalization"],
+    "references": ["Database System Concepts, Silberschatz et al., Ch. 11"],
+    "last_updated": "2026-07-14"
+  }
+]

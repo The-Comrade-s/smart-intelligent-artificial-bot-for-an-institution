@@ -1,0 +1,50 @@
+[
+  {
+    "id": "net-001",
+    "category": "Networking",
+    "topic": "The OSI Model",
+    "difficulty": "intermediate",
+    "content": "The OSI (Open Systems Interconnection) model splits network communication into 7 layers, each with a distinct responsibility, from bottom to top: Physical (raw bits over a medium — cables, radio), Data Link (framing, MAC addresses — e.g. Ethernet), Network (routing, IP addresses), Transport (reliable delivery — TCP, or fast/unreliable — UDP), Session (managing connections), Presentation (data format/encryption), Application (the protocols apps actually use — HTTP, FTP, DNS). It's a conceptual model for reasoning about networking, not literally how every real system is implemented — the TCP/IP model (4 layers) is the more commonly implemented reference in practice.",
+    "example": "A web request roughly maps like this:\nApplication: HTTP request\nTransport: TCP breaks it into segments, adds port numbers\nNetwork: IP adds source/destination addresses, routes the packet\nData Link: Ethernet frames it for the local network\nPhysical: sent as electrical/optical/radio signals",
+    "quiz": [
+      {"type": "mcq", "question": "Which OSI layer is responsible for routing based on IP addresses?", "options": ["Data Link", "Network", "Transport", "Session"], "answer": "Network"},
+      {"type": "short_answer", "question": "Name two protocols that operate at the Transport layer.", "answer": "TCP and UDP"}
+    ],
+    "keywords": ["osi model", "network layers", "tcp/ip", "protocols"],
+    "related_topics": ["TCP/IP", "IP Addressing"],
+    "references": ["Computer Networking: A Top-Down Approach, Kurose & Ross, Ch. 1"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "net-002",
+    "category": "Networking",
+    "topic": "IP Addressing",
+    "difficulty": "intermediate",
+    "content": "An IP address uniquely identifies a device on a network. IPv4 addresses are 32 bits, written as four decimal numbers 0-255 separated by dots (e.g. 192.168.1.1) — giving about 4.3 billion possible addresses, which is why IPv6 (128-bit addresses) was introduced for the long term. A subnet mask (e.g. 255.255.255.0, often written /24) determines which portion of an address identifies the network versus the specific host. Private IP ranges (like 192.168.0.0/16 and 10.0.0.0/8) are reserved for local networks and aren't routable on the public internet directly — NAT (Network Address Translation) lets many private devices share one public IP.",
+    "example": "IP: 192.168.1.10\nSubnet mask: 255.255.255.0 (/24)\n→ Network portion: 192.168.1.0\n→ Host portion: .10\n→ Usable host range on this subnet: 192.168.1.1 to 192.168.1.254",
+    "quiz": [
+      {"type": "mcq", "question": "How many bits does an IPv4 address use?", "options": ["16", "32", "64", "128"], "answer": "32"},
+      {"type": "true_false", "question": "192.168.1.5 is a publicly routable IP address.", "answer": false}
+    ],
+    "keywords": ["ip address", "ipv4", "ipv6", "subnet mask", "nat", "private ip"],
+    "related_topics": ["The OSI Model", "Routing"],
+    "references": ["Computer Networking: A Top-Down Approach, Kurose & Ross, Ch. 4"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "net-003",
+    "category": "Networking",
+    "topic": "HTTP vs HTTPS",
+    "difficulty": "beginner",
+    "content": "HTTP (Hypertext Transfer Protocol) is how browsers and servers exchange web content — requests (GET, POST, etc.) and responses (status codes, headers, body). HTTPS is HTTP layered over TLS (Transport Layer Security) encryption: the same protocol, but the connection is encrypted end-to-end and the server's identity is verified via a certificate. Without HTTPS, data (including passwords) travels in plain text and can be intercepted on the network. Browsers now flag plain HTTP sites as 'Not Secure' for this reason.",
+    "example": "http://example.com   → unencrypted, vulnerable to interception\nhttps://example.com  → encrypted via TLS, server identity verified by certificate\n\nA typical HTTP request:\nGET /index.html HTTP/1.1\nHost: example.com",
+    "quiz": [
+      {"type": "mcq", "question": "What does HTTPS add on top of HTTP?", "options": ["Faster loading", "TLS encryption", "More HTTP methods", "Better caching"], "answer": "TLS encryption"},
+      {"type": "true_false", "question": "Data sent over plain HTTP can be read by anyone intercepting the network traffic.", "answer": true}
+    ],
+    "keywords": ["http", "https", "tls", "ssl", "web security"],
+    "related_topics": ["Network Security", "The OSI Model"],
+    "references": ["MDN Web Docs — HTTP overview"],
+    "last_updated": "2026-07-14"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "id": "algo-001",
+    "category": "Data Structures & Algorithms",
+    "topic": "Big O Notation",
+    "difficulty": "intermediate",
+    "content": "Big O notation describes how an algorithm's runtime (or memory use) grows as the input size (n) grows — it's a way to compare algorithms independent of hardware. O(1) means constant time regardless of input size (e.g. accessing an array by index). O(n) means linear — time grows proportionally with input (e.g. scanning a list once). O(n²) means quadratic — common in nested loops over the same data (e.g. comparing every pair). O(log n) means logarithmic — the algorithm halves the problem each step (e.g. binary search). Big O describes the worst case unless stated otherwise, and ignores constant factors — O(2n) is still written O(n).",
+    "example": "def linear_search(arr, target):   # O(n)\n    for i, val in enumerate(arr):\n        if val == target:\n            return i\n    return -1\n\ndef binary_search(arr, target):   # O(log n), requires sorted arr\n    lo, hi = 0, len(arr) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            lo = mid + 1\n        else:\n            hi = mid - 1\n    return -1",
+    "quiz": [
+      {"type": "mcq", "question": "What is the time complexity of binary search on a sorted array?", "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"], "answer": "O(log n)"},
+      {"type": "mcq", "question": "Two nested loops, each running n times over the same array, give what complexity?", "options": ["O(n)", "O(n log n)", "O(n²)", "O(2n)"], "answer": "O(n²)"},
+      {"type": "short_answer", "question": "Why does binary search require a sorted array?", "answer": "Because it eliminates half the remaining elements each step by comparing against the middle — this only works if order is guaranteed."}
+    ],
+    "keywords": ["big o", "time complexity", "algorithm analysis", "binary search", "linear search"],
+    "related_topics": ["Sorting Algorithms", "Searching Algorithms"],
+    "references": ["CLRS, Introduction to Algorithms, Ch. 3"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "algo-002",
+    "category": "Data Structures & Algorithms",
+    "topic": "Linked Lists",
+    "difficulty": "intermediate",
+    "content": "A linked list is a linear data structure where each element (node) holds a value and a reference (pointer) to the next node, rather than sitting in contiguous memory like an array. This makes insertion/deletion at a known position O(1) (no shifting elements), but random access is O(n) since you must walk from the head. A singly linked list points only forward; a doubly linked list also points backward, allowing traversal both ways at the cost of extra memory per node.",
+    "example": "class Node:\n    def __init__(self, value):\n        self.value = value\n        self.next = None\n\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n\n    def append(self, value):\n        new_node = Node(value)\n        if not self.head:\n            self.head = new_node\n            return\n        current = self.head\n        while current.next:\n            current = current.next\n        current.next = new_node",
+    "quiz": [
+      {"type": "mcq", "question": "What is the time complexity of accessing the 5th element of a singly linked list?", "options": ["O(1)", "O(log n)", "O(n)", "O(n²)"], "answer": "O(n)"},
+      {"type": "true_false", "question": "A doubly linked list uses less memory per node than a singly linked list.", "answer": false}
+    ],
+    "keywords": ["linked list", "node", "pointer", "singly linked", "doubly linked"],
+    "related_topics": ["Arrays", "Stacks", "Queues"],
+    "references": ["CLRS, Introduction to Algorithms, Ch. 10"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "algo-003",
+    "category": "Data Structures & Algorithms",
+    "topic": "Stacks and Queues",
+    "difficulty": "beginner",
+    "content": "A stack is a Last-In-First-Out (LIFO) structure — the last item added is the first removed, like a stack of plates. Core operations: push (add to top) and pop (remove from top), both O(1). Stacks are used for undo functionality, expression evaluation, and function call tracking (the call stack). A queue is First-In-First-Out (FIFO) — the first item added is the first removed, like a line at a checkout. Core operations: enqueue (add to back) and dequeue (remove from front). Queues are used for task scheduling and breadth-first traversal.",
+    "example": "# Stack using a Python list\nstack = []\nstack.append(1)   # push\nstack.append(2)\nstack.pop()        # removes 2 (LIFO)\n\n# Queue using collections.deque\nfrom collections import deque\nqueue = deque()\nqueue.append(1)    # enqueue\nqueue.append(2)\nqueue.popleft()     # removes 1 (FIFO)",
+    "quiz": [
+      {"type": "mcq", "question": "Which structure is LIFO?", "options": ["Queue", "Stack", "Array", "Linked List"], "answer": "Stack"},
+      {"type": "practical", "question": "Which structure would you use to implement 'undo' in a text editor?", "answer": "A stack — push each action, pop to undo the most recent one."}
+    ],
+    "keywords": ["stack", "queue", "lifo", "fifo", "push", "pop", "enqueue", "dequeue"],
+    "related_topics": ["Linked Lists", "Recursion"],
+    "references": ["CLRS, Introduction to Algorithms, Ch. 10"],
+    "last_updated": "2026-07-14"
+  }
+]

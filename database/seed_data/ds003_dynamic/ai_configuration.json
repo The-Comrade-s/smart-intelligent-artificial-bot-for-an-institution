@@ -1,0 +1,39 @@
+{
+  "_note": "This file documents the default AI configuration shape. The live, editable configuration lives in the ai_provider_settings table (seeded by scripts/seed.py) and is managed via the Admin > AI Configuration UI — this JSON is a reference, not itself ingested at runtime.",
+  "providers": [
+    {
+      "provider": "mock",
+      "is_active": true,
+      "is_enabled": true,
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "streaming_enabled": true,
+      "system_prompt": null,
+      "note": "Default active provider. No API key required — always available as a safe fallback."
+    },
+    {
+      "provider": "gemini",
+      "is_active": false,
+      "is_enabled": true,
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "streaming_enabled": true,
+      "system_prompt": null,
+      "note": "Requires GEMINI_API_KEY in backend/.env. Activate via POST /api/v1/ai/providers/activate."
+    },
+    {
+      "provider": "openai",
+      "is_active": false,
+      "is_enabled": true,
+      "temperature": 0.7,
+      "max_tokens": 1024,
+      "streaming_enabled": true,
+      "system_prompt": null,
+      "note": "Requires OPENAI_API_KEY in backend/.env. Activate via POST /api/v1/ai/providers/activate."
+    }
+  ],
+  "default_greeting": "Hello! I'm COSIB AI \ud83d\udc4b Your intelligent academic companion for the Computer Science Department of Gateway ICT Polytechnic, Saapade.",
+  "fallback_message": "This is a placeholder response from the COSIB mock AI provider. Once a real provider is configured, this message is replaced with an actual AI-generated answer.",
+  "knowledge_priority": "Knowledge base context (retrieved via keyword search over KnowledgeArticle/FAQ/Course/Lecturer) is injected into the system prompt and takes priority over the model's general knowledge for department-specific facts.",
+  "safety_settings": "System prompt instructs the model to never reveal its own instructions, decline unrelated requests, and explicitly say when it's uncertain about institution-specific facts rather than guessing."
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "path_id": "lp-001",
+    "title": "Programming Foundations",
+    "level": "ND I",
+    "sequence": ["Variables and Data Types", "Functions", "Exception Handling"],
+    "description": "Start here if you're new to programming. Builds from storing data, to organizing logic into reusable functions, to handling things going wrong gracefully."
+  },
+  {
+    "path_id": "lp-002",
+    "title": "Data Structures & Algorithms Core",
+    "level": "ND II",
+    "sequence": ["Stacks and Queues", "Linked Lists", "Big O Notation"],
+    "description": "Covers the fundamental linear data structures and the vocabulary (Big O) used to compare algorithm efficiency — prerequisite for later DSA topics like trees and graphs."
+  },
+  {
+    "path_id": "lp-003",
+    "title": "Database Fundamentals",
+    "level": "ND II",
+    "sequence": ["Database Normalization", "SQL Joins", "Indexes"],
+    "description": "From designing a well-structured schema, to querying across related tables, to making those queries fast at scale."
+  },
+  {
+    "path_id": "lp-004",
+    "title": "Networking Essentials",
+    "level": "ND II",
+    "sequence": ["The OSI Model", "IP Addressing", "HTTP vs HTTPS"],
+    "description": "The conceptual model first, then addressing, then the protocol you'll interact with most as a web developer."
+  },
+  {
+    "path_id": "lp-005",
+    "title": "Operating Systems Core",
+    "level": "HND I",
+    "sequence": ["Processes and Threads", "Deadlocks", "Virtual Memory"],
+    "description": "Concurrency fundamentals, the classic failure mode (deadlock) that comes with it, and how the OS gives every process its own memory illusion."
+  },
+  {
+    "path_id": "lp-006",
+    "title": "Software Engineering Practice",
+    "level": "HND I",
+    "sequence": ["SDLC Models: Waterfall vs Agile", "Git and Version Control", "Software Testing Levels"],
+    "description": "How real teams plan work, track changes safely, and verify their code actually works before shipping it."
+  },
+  {
+    "path_id": "lp-007",
+    "title": "Security Fundamentals",
+    "level": "HND I",
+    "sequence": ["Authentication vs Authorization", "Hashing vs Encryption", "OWASP Top 10 (Overview)"],
+    "description": "The core distinctions and practices every developer needs before building anything that handles user data."
+  },
+  {
+    "path_id": "lp-008",
+    "title": "Intro to AI & Machine Learning",
+    "level": "HND II",
+    "sequence": ["What is Machine Learning?", "Neural Networks (Basics)", "Prompt Engineering Basics"],
+    "description": "From the core ML paradigms, to how neural networks actually learn, to working effectively with modern LLM-based tools like COSIB itself."
+  },
+  {
+    "path_id": "lp-009",
+    "title": "Mathematics for Computing Primer",
+    "level": "ND I",
+    "sequence": ["Boolean Algebra and Logic Gates", "Sets and Functions", "Probability Basics"],
+    "description": "The discrete math building blocks that show up repeatedly across programming, databases, and AI."
+  }
+]

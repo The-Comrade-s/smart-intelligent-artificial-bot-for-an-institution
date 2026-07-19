@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ai-001",
+    "category": "Artificial Intelligence",
+    "topic": "What is Machine Learning?",
+    "difficulty": "beginner",
+    "content": "Machine learning is a subfield of AI where a system improves at a task by learning patterns from data, rather than being explicitly programmed with rules for every case. Supervised learning trains on labeled examples (input paired with the correct output) to predict outputs for new inputs — e.g. predicting a student's likely grade from past study patterns. Unsupervised learning finds structure in unlabeled data, like grouping similar items together (clustering). Reinforcement learning learns by trial and error, receiving rewards or penalties for actions taken in an environment. Most practical CS-curriculum ML examples (like spam detection or grade prediction) are supervised learning.",
+    "example": "Supervised learning example (conceptually):\nTraining data: 1000 past students' (study_hours, attendance) → final_grade\nModel learns the relationship between inputs and the grade.\nPrediction: given a new student's study_hours and attendance, predict their likely grade.",
+    "quiz": [
+      {"type": "mcq", "question": "Which type of ML uses labeled input-output pairs to learn?", "options": ["Unsupervised learning", "Supervised learning", "Reinforcement learning", "None of these"], "answer": "Supervised learning"},
+      {"type": "short_answer", "question": "Give an example of an unsupervised learning task.", "answer": "Clustering — e.g. grouping customers by purchasing behavior without predefined labels."}
+    ],
+    "keywords": ["machine learning", "supervised learning", "unsupervised learning", "reinforcement learning"],
+    "related_topics": ["Neural Networks", "Natural Language Processing"],
+    "references": ["Pattern Recognition and Machine Learning, Bishop, Ch. 1"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "ai-002",
+    "category": "Artificial Intelligence",
+    "topic": "Neural Networks (Basics)",
+    "difficulty": "advanced",
+    "content": "A neural network is a machine learning model loosely inspired by how neurons connect in the brain. It's built from layers of nodes ('neurons'): an input layer, one or more hidden layers, and an output layer. Each connection has a weight; each node applies an activation function (like ReLU or sigmoid) to decide how much signal to pass forward. Training adjusts the weights using an algorithm called backpropagation, which measures how wrong the output was (the 'loss') and nudges every weight slightly to reduce that error, repeated over many examples. 'Deep learning' just means a neural network with many hidden layers.",
+    "example": "A very simple network for predicting pass/fail from two inputs (attendance %, assignment score):\n\nInput layer: [attendance, assignment_score]\nHidden layer: several neurons, each computing weight1*attendance + weight2*assignment_score + bias, then an activation function\nOutput layer: one neuron outputting a probability of passing",
+    "quiz": [
+      {"type": "mcq", "question": "What algorithm adjusts a neural network's weights during training?", "options": ["Binary search", "Backpropagation", "Quicksort", "Normalization"], "answer": "Backpropagation"},
+      {"type": "true_false", "question": "'Deep learning' refers to neural networks with many hidden layers.", "answer": true}
+    ],
+    "keywords": ["neural networks", "deep learning", "backpropagation", "activation function"],
+    "related_topics": ["What is Machine Learning?"],
+    "references": ["Deep Learning, Goodfellow, Bengio & Courville, Ch. 6"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "ai-003",
+    "category": "Artificial Intelligence",
+    "topic": "Prompt Engineering Basics",
+    "difficulty": "beginner",
+    "content": "Prompt engineering is the practice of writing effective instructions for a large language model (LLM) to get useful, accurate output. Useful techniques: be specific about the desired format and length; give the model relevant context rather than assuming it knows your situation; break a complex task into smaller steps; provide an example of the output style you want (few-shot prompting); ask the model to reason step by step for problems that need it. Prompt engineering doesn't change what a model fundamentally knows — it changes how well you can extract and shape the response.",
+    "example": "Weak prompt: \"Explain sorting.\"\nBetter prompt: \"Explain bubble sort to a first-year Computer Science student in under 150 words, including one worked example with a 5-element array.\"",
+    "quiz": [
+      {"type": "mcq", "question": "What is 'few-shot prompting'?", "options": ["Asking very short questions", "Giving the model an example of the output style you want", "Using multiple AI models at once", "Reducing token usage"], "answer": "Giving the model an example of the output style you want"},
+      {"type": "practical", "question": "Rewrite this weak prompt to be more specific: 'Write about algorithms.'", "answer": "Example: 'Explain the difference between O(n) and O(n log n) algorithms in under 100 words, with one real-world example of each.'"}
+    ],
+    "keywords": ["prompt engineering", "llm", "few-shot", "ai ethics"],
+    "related_topics": ["What is Machine Learning?", "Natural Language Processing"],
+    "references": ["Anthropic Prompt Engineering Guide — docs.claude.com"],
+    "last_updated": "2026-07-14"
+  }
+]

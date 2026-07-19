@@ -1,0 +1,50 @@
+[
+  {
+    "id": "os-001",
+    "category": "Operating Systems",
+    "topic": "Processes and Threads",
+    "difficulty": "intermediate",
+    "content": "A process is a running instance of a program, with its own memory space (code, data, heap, stack) managed by the OS. A thread is a unit of execution within a process — threads in the same process share memory, which makes communication between them fast but introduces the risk of race conditions if two threads modify shared data at the same time without coordination. Creating a new process is heavier (more memory, slower to start) than creating a new thread, but processes are isolated from each other's crashes; a bug in one thread can crash the whole process.",
+    "example": "# Python: threading (shares memory, watch for race conditions)\nimport threading\ndef worker():\n    print(\"running in a thread\")\nt = threading.Thread(target=worker)\nt.start()\n\n# Python: multiprocessing (separate memory, no race conditions on shared vars)\nimport multiprocessing\np = multiprocessing.Process(target=worker)\np.start()",
+    "quiz": [
+      {"type": "mcq", "question": "What do threads in the same process share?", "options": ["Nothing", "Memory space", "Only the CPU", "Separate stacks only"], "answer": "Memory space"},
+      {"type": "short_answer", "question": "What's a race condition?", "answer": "A bug that occurs when two threads access/modify shared data concurrently without proper coordination, producing unpredictable results depending on timing."}
+    ],
+    "keywords": ["process", "thread", "race condition", "concurrency"],
+    "related_topics": ["Scheduling", "Deadlocks"],
+    "references": ["Operating System Concepts, Silberschatz et al., Ch. 3-4"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "os-002",
+    "category": "Operating Systems",
+    "topic": "Deadlocks",
+    "difficulty": "advanced",
+    "content": "A deadlock happens when two or more processes/threads are each waiting for a resource the other holds, so none can proceed. Four conditions must all hold for deadlock to be possible: mutual exclusion (a resource can only be held by one process at a time), hold and wait (a process holds one resource while waiting for another), no preemption (resources can't be forcibly taken away), and circular wait (a cycle of processes each waiting on the next). Preventing deadlock means breaking at least one of these conditions — a common practical approach is always acquiring locks in the same, consistent order.",
+    "example": "Classic deadlock:\nThread A: locks Resource 1, then tries to lock Resource 2\nThread B: locks Resource 2, then tries to lock Resource 1\n→ Both wait forever.\n\nFix: always acquire locks in the same order (e.g. always Resource 1 before Resource 2) in every thread.",
+    "quiz": [
+      {"type": "mcq", "question": "Which is NOT one of the four necessary conditions for deadlock?", "options": ["Mutual exclusion", "Hold and wait", "Preemption", "Circular wait"], "answer": "Preemption"},
+      {"type": "practical", "question": "What's a simple practical way to prevent deadlock when using multiple locks?", "answer": "Always acquire locks in the same, consistent order across all threads."}
+    ],
+    "keywords": ["deadlock", "mutual exclusion", "circular wait", "concurrency"],
+    "related_topics": ["Processes and Threads", "Scheduling"],
+    "references": ["Operating System Concepts, Silberschatz et al., Ch. 8"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "os-003",
+    "category": "Operating Systems",
+    "topic": "Virtual Memory",
+    "difficulty": "advanced",
+    "content": "Virtual memory lets each process behave as if it has its own large, contiguous block of memory, even though physical RAM is shared and limited. The OS maps virtual addresses to physical addresses via page tables, in fixed-size chunks called pages (commonly 4KB). This enables memory isolation between processes (one process can't directly read another's memory), lets the OS run programs larger than physical RAM by swapping unused pages to disk, and simplifies programming since each process doesn't need to know where in physical memory it actually sits.",
+    "example": "Process A thinks it owns addresses 0x0000 to 0xFFFF.\nProcess B also thinks it owns addresses 0x0000 to 0xFFFF.\n\nThe OS's page table maps each process's virtual addresses to different physical RAM locations, so they don't actually collide — and pages Process A isn't using right now might be swapped to disk.",
+    "quiz": [
+      {"type": "mcq", "question": "What structure does the OS use to map virtual addresses to physical addresses?", "options": ["Page table", "Stack frame", "Routing table", "Symbol table"], "answer": "Page table"},
+      {"type": "true_false", "question": "Virtual memory allows running programs larger than physical RAM by swapping unused pages to disk.", "answer": true}
+    ],
+    "keywords": ["virtual memory", "page table", "paging", "memory management"],
+    "related_topics": ["Processes and Threads", "File Systems"],
+    "references": ["Operating System Concepts, Silberschatz et al., Ch. 9"],
+    "last_updated": "2026-07-14"
+  }
+]

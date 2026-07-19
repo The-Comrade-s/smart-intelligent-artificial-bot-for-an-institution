@@ -1,0 +1,20 @@
+{
+  "_note": "This file documents the shape of analytics data the admin dashboard displays. Real values are always computed live from the Conversations, Messages, Feedback, and AnalyticsEvent tables by app/services/analytics_service.py — nothing here is read at runtime, it's a reference for what to expect and how demo mode's seeded conversations will populate these views.",
+  "tracked_metrics": {
+    "daily_conversations": "Count of conversations created per day, last 14 days — GET /api/v1/analytics/conversations-timeseries",
+    "user_growth": "Count of new user registrations per day, last 30 days — GET /api/v1/analytics/user-growth",
+    "provider_usage": "Count of conversations grouped by which AI provider generated the replies — GET /api/v1/analytics/provider-usage",
+    "average_response_time_ms": "Average of Message.response_time_ms across all assistant messages — part of GET /api/v1/analytics/dashboard",
+    "top_faqs": "FAQs ranked by view_count — GET /api/v1/analytics/top-faqs",
+    "top_articles": "Knowledge articles ranked by view_count — GET /api/v1/analytics/top-articles",
+    "feedback_summary": "Average rating, positive/negative split, bug report and suggestion counts — GET /api/v1/feedback/summary"
+  },
+  "sample_expected_shape": {
+    "total_students": 12,
+    "total_conversations": 20,
+    "todays_conversations": 3,
+    "knowledge_articles": 27,
+    "faqs": 14,
+    "average_response_time_ms": 180
+  }
+}

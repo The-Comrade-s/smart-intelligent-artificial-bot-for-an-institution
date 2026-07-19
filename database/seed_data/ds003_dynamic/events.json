@@ -1,0 +1,44 @@
+[
+  {
+    "title": "SIWES Orientation",
+    "description": "Mandatory orientation session for ND II students proceeding to industrial attachment.",
+    "venue": "Computer Science Department Lecture Hall",
+    "organizer": "Computer Science Department",
+    "days_from_now": 7
+  },
+  {
+    "title": "Department Seminar: Introduction to Cloud Computing",
+    "description": "Open seminar covering cloud computing fundamentals — AWS, Azure, and GCP basics, plus career pathways in cloud engineering.",
+    "venue": "ICT Auditorium",
+    "organizer": "Computer Science Department",
+    "days_from_now": 14
+  },
+  {
+    "title": "First Semester Examinations Begin",
+    "description": "First semester examinations for all Computer Science levels (ND I, ND II, HND I, HND II).",
+    "venue": "Examination Halls (see portal for specific venue per course)",
+    "organizer": "Examinations & Records Unit",
+    "days_from_now": 30
+  },
+  {
+    "title": "Inter-Departmental Hackathon",
+    "description": "24-hour hackathon open to Computer Science and Computer Engineering students. Teams of up to 4. Prizes for the top three projects.",
+    "venue": "ICT Innovation Hub",
+    "organizer": "Computer Science Students Association",
+    "days_from_now": 21
+  },
+  {
+    "title": "Project Defense — HND II Final Year Students",
+    "description": "Final year project defense for HND II Computer Science students. Attendance mandatory for all presenting students.",
+    "venue": "Computer Science Department Seminar Room",
+    "organizer": "Computer Science Department",
+    "days_from_now": 45
+  },
+  {
+    "title": "Career Talk: Breaking into Software Engineering",
+    "description": "Guest talk from industry professionals on building a software engineering career after graduation, including SIWES-to-job pathways.",
+    "venue": "ICT Auditorium",
+    "organizer": "Computer Science Department",
+    "days_from_now": 10
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "math-001",
+    "category": "Mathematics for Computing",
+    "topic": "Boolean Algebra and Logic Gates",
+    "difficulty": "beginner",
+    "content": "Boolean algebra works with values that are only ever true or false (1 or 0), using operators AND, OR, and NOT. AND is true only when both inputs are true. OR is true when at least one input is true. NOT flips the value. These map directly to logic gates in digital circuits, and to boolean operators in every programming language. Combinations of these gates build up everything from a simple traffic-light controller to a full CPU.",
+    "example": "Truth table for AND:\nA | B | A AND B\n0 | 0 | 0\n0 | 1 | 0\n1 | 0 | 0\n1 | 1 | 1\n\nIn code:\nis_eligible = has_min_credits and has_paid_fees  # AND\ncan_register = is_new_student or has_cleared_probation  # OR",
+    "quiz": [
+      {"type": "mcq", "question": "When is 'A AND B' true?", "options": ["When A is true", "When B is true", "Only when both A and B are true", "When either is true"], "answer": "Only when both A and B are true"},
+      {"type": "short_answer", "question": "What does the NOT operator do?", "answer": "It inverts a boolean value — true becomes false, and false becomes true."}
+    ],
+    "keywords": ["boolean algebra", "logic gates", "and", "or", "not", "truth table"],
+    "related_topics": ["Sets and Functions"],
+    "references": ["Discrete Mathematics and Its Applications, Rosen, Ch. 12"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "math-002",
+    "category": "Mathematics for Computing",
+    "topic": "Sets and Functions",
+    "difficulty": "beginner",
+    "content": "A set is an unordered collection of distinct elements — no duplicates, order doesn't matter. Common set operations: union (elements in either set), intersection (elements in both sets), difference (elements in one set but not the other). A function maps every element of one set (the domain) to exactly one element of another set (the codomain) — this exact-one-output-per-input property is what distinguishes a function from a general relation. These concepts underpin database theory (a relation is a set of tuples) and much of programming (a Python `set` directly implements mathematical set semantics).",
+    "example": "A = {1, 2, 3}\nB = {2, 3, 4}\nA ∪ B (union) = {1, 2, 3, 4}\nA ∩ B (intersection) = {2, 3}\nA - B (difference) = {1}\n\nIn Python:\na = {1, 2, 3}\nb = {2, 3, 4}\na | b   # union → {1, 2, 3, 4}\na & b   # intersection → {2, 3}\na - b   # difference → {1}",
+    "quiz": [
+      {"type": "mcq", "question": "What is A ∩ B if A = {1,2,3} and B = {2,3,4}?", "options": ["{1,2,3,4}", "{2,3}", "{1}", "{4}"], "answer": "{2,3}"},
+      {"type": "short_answer", "question": "What distinguishes a function from a general relation?", "answer": "A function maps each input in the domain to exactly one output — a general relation can map one input to multiple outputs."}
+    ],
+    "keywords": ["sets", "union", "intersection", "functions", "domain", "codomain"],
+    "related_topics": ["Boolean Algebra and Logic Gates", "Probability"],
+    "references": ["Discrete Mathematics and Its Applications, Rosen, Ch. 2"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "math-003",
+    "category": "Mathematics for Computing",
+    "topic": "Probability Basics",
+    "difficulty": "intermediate",
+    "content": "Probability measures how likely an event is, expressed as a number between 0 (impossible) and 1 (certain). For equally likely outcomes, probability = (favorable outcomes) / (total possible outcomes). Independent events (like two separate coin flips) don't affect each other — the probability of both happening is the product of their individual probabilities. Probability underlies many CS applications: randomized algorithms, machine learning (a model's confidence is often a probability), and hashing (analyzing collision likelihood).",
+    "example": "A fair six-sided die: P(rolling a 4) = 1/6\nTwo independent coin flips: P(both heads) = P(heads) × P(heads) = 0.5 × 0.5 = 0.25\n\nIn a spam classifier: P(spam | contains \"free money\") might be estimated at 0.92 from training data — used to decide whether to flag the email.",
+    "quiz": [
+      {"type": "mcq", "question": "What's the probability of rolling a 4 on a fair six-sided die?", "options": ["1/2", "1/4", "1/6", "1"], "answer": "1/6"},
+      {"type": "short_answer", "question": "What's the probability of getting heads twice in a row on a fair coin?", "answer": "0.25 (0.5 × 0.5), since the two flips are independent events."}
+    ],
+    "keywords": ["probability", "independent events", "randomized algorithms"],
+    "related_topics": ["Sets and Functions", "What is Machine Learning?"],
+    "references": ["Discrete Mathematics and Its Applications, Rosen, Ch. 7"],
+    "last_updated": "2026-07-14"
+  }
+]

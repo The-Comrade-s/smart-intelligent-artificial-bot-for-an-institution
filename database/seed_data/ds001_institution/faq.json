@@ -1,0 +1,114 @@
+[
+  {
+    "id": "faq-001",
+    "category": "Admissions",
+    "question": "Does Gateway ICT Polytechnic offer Computer Science?",
+    "answer": "Yes — Gateway ICT Polytechnic, Saapade offers an HND (Higher National Diploma) in Computer Science, confirmed in official admission notices. A separate HND in Computer Engineering is also offered. Whether an ND in Computer Science is offered on this campus specifically is not confirmed in public sources — check with the department.",
+    "is_pinned": true,
+    "status": "published"
+  },
+  {
+    "id": "faq-002",
+    "category": "Admissions",
+    "question": "What are the entry requirements for HND Computer Science?",
+    "answer": "Generally, a relevant National Diploma (ND) at not below Lower Credit grade, plus at least one year of post-ND industrial attachment experience, alongside SSCE entry requirements for the corresponding HND programme. Confirm the exact accepted ND fields and any additional requirements with the department, as these can be programme-specific.",
+    "is_pinned": true,
+    "status": "published"
+  },
+  {
+    "id": "faq-003",
+    "category": "Admissions",
+    "question": "How do I apply to Gateway ICT Polytechnic?",
+    "answer": "Visit the online application portal at onlineappsaapade.gaposa.edu.ng, click 'Fresh Application', complete the Basic Details Form, pay the application fee, then return to complete the Detailed Application Form with your O'level results and a passport photo (JPG, 120×120px, under 20kb).",
+    "is_pinned": true,
+    "status": "published"
+  },
+  {
+    "id": "faq-004",
+    "category": "Registration",
+    "question": "Where do I register my courses each semester?",
+    "answer": "Through the student portal at studentportal.gaposa.edu.ng. Registration deadlines are announced per session — check the portal or your department notice board for the current window rather than assuming a fixed date.",
+    "is_pinned": false,
+    "status": "published"
+  },
+  {
+    "id": "faq-005",
+    "category": "School fees",
+    "question": "How much are school fees at Gateway ICT Polytechnic?",
+    "answer": "Fee amounts change per session and per programme. This isn't published in a form COSIB can verify and repeat reliably — check the current fee schedule on the application/student portal, or contact the Bursary at payment@gaposa.edu.ng / 0813 869 1830.",
+    "is_pinned": true,
+    "status": "published"
+  },
+  {
+    "id": "faq-006",
+    "category": "Examinations",
+    "question": "What's the minimum attendance to sit for exams?",
+    "answer": "Information Not Available specifically for this institution in the sources checked. Many Nigerian polytechnics require around 75% attendance, but confirm the exact current policy with the department or Examinations unit rather than relying on that figure.",
+    "is_pinned": false,
+    "status": "published"
+  },
+  {
+    "id": "faq-007",
+    "category": "Results",
+    "question": "Where do I check my results?",
+    "answer": "Through the student portal at studentportal.gaposa.edu.ng. If you can't access your results there, contact the Examinations & Records unit or Registry.",
+    "is_pinned": false,
+    "status": "published"
+  },
+  {
+    "id": "faq-008",
+    "category": "SIWES",
+    "question": "What is SIWES and when do I do it?",
+    "answer": "SIWES (Student Industrial Work Experience Scheme) is a nationally mandated industrial attachment for relevant programmes, typically completed between ND II and HND I and lasting about a year. Gateway-specific placement procedures and the SIWES coordinator's contact are not confirmed in public sources — ask the department.",
+    "is_pinned": true,
+    "status": "published"
+  },
+  {
+    "id": "faq-009",
+    "category": "Department information",
+    "question": "Who is the current Head of the Computer Science department?",
+    "answer": "Information Not Available — no current, verifiable public record was found. Check the staff directory at new.gaposa.edu.ng or ask at the department office for the current HOD.",
+    "is_pinned": false,
+    "status": "published"
+  },
+  {
+    "id": "faq-010",
+    "category": "Contacts",
+    "question": "What's the general contact number for the Polytechnic?",
+    "answer": "+234 806 793 7140 (also listed as 0806 793 7140). For admissions/payment enquiries specifically: 0813 869 1830, email payment@gaposa.edu.ng.",
+    "is_pinned": true,
+    "status": "published"
+  },
+  {
+    "id": "faq-011",
+    "category": "Campus services",
+    "question": "Does the school provide hostel accommodation?",
+    "answer": "On-campus hostels are listed among the Polytechnic's facilities. Allocation process and cost are not confirmed in public sources — check current admission/registration information or ask Student Affairs.",
+    "is_pinned": false,
+    "status": "published"
+  },
+  {
+    "id": "faq-012",
+    "category": "Admissions",
+    "question": "What's the difference between Computer Science and Computer Engineering at Gateway ICT Polytechnic?",
+    "answer": "They're administered as two separate HND programmes. Computer Science focuses on software, algorithms, and computing theory; Computer Engineering sits alongside Electrical/Electronics Engineering options. If you're unsure which fits your interests, ask the respective departments directly — course-by-course curriculum comparisons aren't published centrally.",
+    "is_pinned": false,
+    "status": "published"
+  },
+  {
+    "id": "faq-013",
+    "category": "Campus services",
+    "question": "Is there a careers or job placement office?",
+    "answer": "Not confirmed in public sources. SIWES is the main nationally mandated mechanism connecting students to industry experience — see the SIWES FAQ.",
+    "is_pinned": false,
+    "status": "published"
+  },
+  {
+    "id": "faq-014",
+    "category": "Registration",
+    "question": "I'm having trouble with the online application portal — who do I contact?",
+    "answer": "Email payment@gaposa.edu.ng or call 0813 869 1830 / 0806 793 7140 for admission portal support.",
+    "is_pinned": false,
+    "status": "published"
+  }
+]

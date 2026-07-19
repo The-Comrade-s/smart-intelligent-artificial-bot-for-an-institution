@@ -1,0 +1,82 @@
+[
+  {
+    "id": "svc-001",
+    "category": "student_services",
+    "title": "ICT Centre",
+    "content": "The Polytechnic operates ICT laboratories used for hands-on training across ICT-related courses, consistent with its identity as one of Ogun State's dedicated ICT polytechnics. Specific ICT Centre hours, location, and public-access policy are Information Not Available — ask the department or the ICT unit directly.",
+    "keywords": ["ict centre", "computer lab", "ict facilities"],
+    "related_topics": ["Campus Facilities"],
+    "source": "https://naijadirectory.org/listing/gateway-ict-polytechnic-saapade/",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "svc-002",
+    "category": "student_services",
+    "title": "Library",
+    "content": "The Polytechnic reports a library stocked with academic materials and digital resources. Specific opening hours, borrowing policy, and digital-access details are Information Not Available in public sources — confirm with the library directly.",
+    "keywords": ["library", "reading room"],
+    "related_topics": ["Campus Facilities"],
+    "source": "https://naijadirectory.org/listing/gateway-ict-polytechnic-saapade/",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "svc-003",
+    "category": "student_services",
+    "title": "Medical Centre",
+    "content": "Information Not Available. No public confirmation of a dedicated on-campus medical/health centre was found in the sources checked. Ask Student Affairs about the current health-service arrangement for students.",
+    "keywords": ["medical centre", "health services", "clinic"],
+    "related_topics": ["Student Services Overview"],
+    "source": "Not available",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "svc-004",
+    "category": "student_services",
+    "title": "Registry",
+    "content": "The Registry, under the Registrar, is one of the Polytechnic's principal offices, generally responsible for student records, registration, and official correspondence at Nigerian polytechnics. Specific Registry office hours/location on the Saapade campus are Information Not Available here — confirm on arrival at the main administration block.",
+    "keywords": ["registry", "registrar", "student records"],
+    "related_topics": ["Leadership and Governance", "Course Registration Procedure"],
+    "source": "https://new.gaposa.edu.ng/ (Registrar listed among principal officers)",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "svc-005",
+    "category": "student_services",
+    "title": "Bursary",
+    "content": "The Bursary, under the Bursar, is one of the Polytechnic's principal offices and generally handles fee payments and financial matters at Nigerian polytechnics. Online payment channels are available: transcript payment, penalty fee payment, and other-fees payment via onlinesaapade.gaposa.edu.ng, plus payment confirmation at payment.gaposa.edu.ng. For payment enquiries: payment@gaposa.edu.ng, 0813 869 1830.",
+    "keywords": ["bursary", "fees", "payment", "school fees"],
+    "related_topics": ["Leadership and Governance"],
+    "source": "https://new.gaposa.edu.ng/ ; https://admissionform.ng/gateway-ict-polytechnic-saapade-nd-hnd/",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "svc-006",
+    "category": "student_services",
+    "title": "Student Affairs",
+    "content": "Information Not Available in specific detail. The Polytechnic reports an active Student Union representing student interests and organizing activities, alongside academic and social clubs. The formal Student Affairs office's current contact details were not found in public sources — ask at the main administration block.",
+    "keywords": ["student affairs", "student union", "student welfare"],
+    "related_topics": ["Student Code of Conduct"],
+    "source": "https://naijadirectory.org/listing/gateway-ict-polytechnic-saapade/",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "svc-007",
+    "category": "student_services",
+    "title": "Career Services",
+    "content": "Information Not Available. No dedicated careers office or placement service was confirmed in public sources. SIWES (industrial attachment) is the primary nationally mandated mechanism connecting students to industry experience — see SIWES Information.",
+    "keywords": ["career services", "job placement", "internship"],
+    "related_topics": ["SIWES Information"],
+    "source": "Not available",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "svc-008",
+    "category": "student_services",
+    "title": "Hostels",
+    "content": "On-campus hostel accommodation is listed among the Polytechnic's facilities. Specific hostel allocation process, cost, and capacity are Information Not Available in public sources — check the current session's admission/registration information or ask Student Affairs.",
+    "keywords": ["hostel", "accommodation", "housing"],
+    "related_topics": ["Campus Facilities"],
+    "source": "https://naijadirectory.org/listing/gateway-ict-polytechnic-saapade/",
+    "last_updated": "2026-07-14"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "se-001",
+    "category": "Software Engineering",
+    "topic": "SDLC Models: Waterfall vs Agile",
+    "difficulty": "beginner",
+    "content": "The Software Development Life Cycle (SDLC) describes the phases a project moves through: requirements, design, implementation, testing, deployment, maintenance. Waterfall runs these phases sequentially, one completed before the next begins — predictable and easy to plan, but costly to change direction once you're deep into it, since you assumed requirements were fully known upfront. Agile (including Scrum) breaks work into short iterations (sprints, often 1-2 weeks), delivering a working increment each time and adapting based on feedback — better suited to projects where requirements are expected to evolve, at the cost of needing more ongoing stakeholder involvement.",
+    "example": "Waterfall: Requirements (4 weeks) → Design (3 weeks) → Build (8 weeks) → Test (3 weeks) → Deploy.\nEach phase fully finishes before the next starts.\n\nScrum: 2-week sprints, each ending with a working (if partial) product increment, a sprint review, and a retrospective before planning the next sprint.",
+    "quiz": [
+      {"type": "mcq", "question": "Which model delivers working increments in short, repeated cycles?", "options": ["Waterfall", "Agile/Scrum", "Both equally", "Neither"], "answer": "Agile/Scrum"},
+      {"type": "short_answer", "question": "What's the main risk of Waterfall if requirements were misunderstood early on?", "answer": "Discovering the mistake late, after design and implementation are already built around the wrong requirements — expensive to fix."}
+    ],
+    "keywords": ["sdlc", "waterfall", "agile", "scrum", "sprint"],
+    "related_topics": ["Requirements Engineering", "Version Control"],
+    "references": ["Software Engineering, Sommerville, Ch. 2-3"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "se-002",
+    "category": "Software Engineering",
+    "topic": "Git and Version Control",
+    "difficulty": "beginner",
+    "content": "Version control tracks changes to code over time, letting multiple people work on the same project without overwriting each other's work, and letting you roll back to any previous state. Git is the dominant distributed version control system: every developer has a full copy of the project history locally. Core concepts: a commit is a saved snapshot with a message describing the change; a branch is an independent line of development (commonly used for new features); a merge combines changes from one branch into another. GitHub/GitLab host Git repositories remotely and add collaboration features (pull requests, issues, code review) on top of Git itself.",
+    "example": "git init                          # start tracking a new project\ngit add file.py                   # stage a change\ngit commit -m \"Add login feature\" # save a snapshot\ngit branch feature/login          # create a branch\ngit checkout feature/login        # switch to it\ngit merge feature/login           # merge it back into the current branch",
+    "quiz": [
+      {"type": "mcq", "question": "What does 'git commit' do?", "options": ["Uploads code to GitHub", "Saves a snapshot of staged changes", "Creates a new branch", "Deletes history"], "answer": "Saves a snapshot of staged changes"},
+      {"type": "true_false", "question": "GitHub and Git are the same thing.", "answer": false}
+    ],
+    "keywords": ["git", "github", "version control", "commit", "branch", "merge"],
+    "related_topics": ["SDLC Models: Waterfall vs Agile", "Testing"],
+    "references": ["Pro Git, Chacon & Straub — git-scm.com/book"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "se-003",
+    "category": "Software Engineering",
+    "topic": "Software Testing Levels",
+    "difficulty": "intermediate",
+    "content": "Testing happens at multiple levels, each catching different kinds of bugs. Unit tests check a single function or class in isolation — fast, and the first line of defense. Integration tests check that multiple units work correctly together (e.g. a service talking to a real database). System tests check the whole application end to end, closer to how a user would actually use it. Acceptance tests confirm the software meets the agreed requirements, often from the customer's perspective. In general, you want many fast unit tests, fewer integration tests, and few (but valuable) end-to-end tests — this shape is often called the 'testing pyramid'.",
+    "example": "# Unit test example (pytest)\ndef add(a, b):\n    return a + b\n\ndef test_add():\n    assert add(2, 3) == 5\n\n# Integration test would instead spin up a real (test) database\n# and confirm a service function correctly reads/writes to it.",
+    "quiz": [
+      {"type": "mcq", "question": "Which test level checks a single function in isolation?", "options": ["System test", "Unit test", "Acceptance test", "Load test"], "answer": "Unit test"},
+      {"type": "short_answer", "question": "Why do most teams write more unit tests than end-to-end tests?", "answer": "Unit tests are faster to run and easier to pinpoint failures in; end-to-end tests are slower, more brittle, and more expensive to maintain, so they're reserved for critical user flows."}
+    ],
+    "keywords": ["testing", "unit tests", "integration tests", "testing pyramid"],
+    "related_topics": ["Git and Version Control", "SDLC Models: Waterfall vs Agile"],
+    "references": ["Software Engineering, Sommerville, Ch. 8"],
+    "last_updated": "2026-07-14"
+  }
+]

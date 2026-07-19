@@ -1,0 +1,82 @@
+[
+  {
+    "id": "reg-001",
+    "category": "academic_regulations",
+    "title": "The ND/HND System (General Nigerian Polytechnic Standard)",
+    "content": "Polytechnic education in Nigeria, including at Gateway ICT Polytechnic, follows the National Board for Technical Education (NBTE) framework: a 2-year National Diploma (ND I and ND II), typically followed by a mandatory one-year industrial attachment (SIWES), then a 2-year Higher National Diploma (HND I and HND II) for students who qualify with at least Lower Credit. This describes the general national system — Gateway-specific variations, if any, are Information Not Available and should be confirmed with the department.",
+    "keywords": ["nd", "hnd", "polytechnic system", "nbte", "programme structure"],
+    "related_topics": ["SIWES Information", "Admission Information (ND and HND)"],
+    "source": "General NBTE polytechnic system standard — https://naijadirectory.org/listing/gateway-ict-polytechnic-saapade/",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "reg-002",
+    "category": "academic_regulations",
+    "title": "Course Registration Procedure",
+    "content": "Course registration at Nigerian polytechnics is typically completed through the student portal at the start of each semester, within a published deadline window per level (ND I, ND II, HND I, HND II). Gateway ICT Polytechnic's student portal is at studentportal.gaposa.edu.ng. Exact per-session registration deadlines change every session — check the portal or the department notice board for the current window rather than assuming a fixed date.",
+    "keywords": ["course registration", "registration deadline", "student portal"],
+    "related_topics": ["Academic Calendar"],
+    "source": "https://studentportal.gaposa.edu.ng/ ; https://myschoolgist.com/news/gateway-poly-courses/",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "reg-003",
+    "category": "academic_regulations",
+    "title": "SIWES Information",
+    "content": "SIWES (Student Industrial Work Experience Scheme) is a nationally mandated industrial attachment for Nigerian polytechnic and university students in relevant programmes, typically undertaken between ND II and HND I, lasting about one year, and coordinated by the institution's SIWES/Industry-Based unit. Gateway-specific SIWES placement procedures, coordinator contact, and exact duration for the Computer Science HND are Information Not Available in public sources — confirm with the department's SIWES coordinator.",
+    "keywords": ["siwes", "industrial attachment", "industrial training", "it"],
+    "related_topics": ["The ND/HND System (General Nigerian Polytechnic Standard)"],
+    "source": "General NBTE/SIWES national scheme standard",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "reg-004",
+    "category": "academic_regulations",
+    "title": "Grading System (General Nigerian Polytechnic Standard)",
+    "content": "Nigerian polytechnics generally grade using a Cumulative Grade Point Average (CGPA) system, commonly on a 5-point scale, with HND classifications typically ranging from Distinction down to Lower Credit. The exact grade-point boundaries, pass marks, and classification thresholds specific to Gateway ICT Polytechnic are Information Not Available here — confirm the current grading scheme in the student handbook rather than assuming these figures.",
+    "keywords": ["grading system", "cgpa", "grade point average", "classification"],
+    "related_topics": ["Graduation Requirements"],
+    "source": "General Nigerian polytechnic grading convention — Gateway-specific figures not independently verified",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "reg-005",
+    "category": "academic_regulations",
+    "title": "Attendance Requirements",
+    "content": "Information Not Available specific to Gateway ICT Polytechnic. Nigerian polytechnics commonly require a minimum attendance percentage (often around 75%) to sit for semester examinations, but the exact policy and enforcement at this institution should be confirmed with the department or student handbook rather than assumed.",
+    "keywords": ["attendance", "minimum attendance", "exam eligibility"],
+    "related_topics": ["Examination Regulations"],
+    "source": "Not independently verified for this institution",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "reg-006",
+    "category": "academic_regulations",
+    "title": "Examination Regulations",
+    "content": "Information Not Available in detail for Gateway ICT Polytechnic specifically. General expectations at Nigerian polytechnics include registering for courses before the exam period, meeting attendance thresholds, and following institution-specific examination conduct rules. Confirm current exam regulations, timetable, and misconduct policy with the Examinations & Records unit.",
+    "keywords": ["examination", "exam regulations", "exam conduct"],
+    "related_topics": ["Grading System (General Nigerian Polytechnic Standard)"],
+    "source": "Not independently verified for this institution",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "reg-007",
+    "category": "academic_regulations",
+    "title": "Student Code of Conduct",
+    "content": "Information Not Available in public sources for Gateway ICT Polytechnic specifically. The Polytechnic maintains a staff handbook (referenced on the official site) — a corresponding student handbook, if published, would be the authoritative source for conduct rules, disciplinary procedures, and appeals. Ask the Student Affairs unit for the current handbook.",
+    "keywords": ["code of conduct", "student conduct", "discipline"],
+    "related_topics": ["Student Services Overview"],
+    "source": "Not independently verified for this institution",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "reg-008",
+    "category": "academic_regulations",
+    "title": "Graduation Requirements",
+    "content": "Information Not Available in specific detail for Gateway ICT Polytechnic. Generally, Nigerian HND graduation requires completing all required courses across HND I and HND II with at least the minimum passing CGPA, clearing all outstanding fees, and (for most programmes) having completed SIWES. Confirm the exact requirements and any project/thesis component for Computer Science with the department.",
+    "keywords": ["graduation requirements", "clearance", "final year project"],
+    "related_topics": ["Grading System (General Nigerian Polytechnic Standard)"],
+    "source": "General Nigerian polytechnic convention — Gateway-specific requirements not independently verified",
+    "last_updated": "2026-07-14"
+  }
+]

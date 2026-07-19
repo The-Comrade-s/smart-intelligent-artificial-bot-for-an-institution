@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dept-001",
+    "category": "department",
+    "title": "Computer Science at Gateway ICT Polytechnic",
+    "content": "Gateway ICT Polytechnic, Saapade offers a Higher National Diploma (HND) in Computer Science, confirmed in official admission notices for multiple sessions (e.g. 2022/2023, 2024/2025), alongside a separate HND in Computer Engineering. Entry to the HND requires a relevant National Diploma at not below Lower Credit, plus post-ND industrial experience. Whether an ND in Computer Science (or a directly related ND programme) is offered on this specific campus, as opposed to students transferring in with an ND from elsewhere, is Information Not Available in the sources checked — confirm with the department office or current prospectus.",
+    "keywords": ["computer science", "hnd computer science", "department", "programme"],
+    "related_topics": ["Admission Information (ND and HND)", "Head of Department"],
+    "source": "https://myschool.ng/news/gateway-ict-polytechnic-saapade-hnd-admission-form-for-2024-2025-session",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "dept-002",
+    "category": "department",
+    "title": "Head of Department (HOD)",
+    "content": "Information Not Available. No current, verifiable public record of the Computer Science HOD's name was found. COSIB should not guess who currently holds this role — ask the department office or check the staff directory at new.gaposa.edu.ng/?page_id=17 for the current officeholder.",
+    "keywords": ["hod", "head of department", "computer science hod"],
+    "related_topics": ["Computer Science at Gateway ICT Polytechnic"],
+    "source": "Not available — verify at https://new.gaposa.edu.ng/?page_id=17",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "dept-003",
+    "category": "department",
+    "title": "Department Office and Location",
+    "content": "Information Not Available. The specific building/office location for the Computer Science department on the Saapade campus was not found in public sources. Ask at the main administration block or Registry for directions on your first visit.",
+    "keywords": ["department office", "office location", "computer science office"],
+    "related_topics": ["Campus Location and Address"],
+    "source": "Not available",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "dept-004",
+    "category": "department",
+    "title": "Computer Science Laboratories",
+    "content": "The Polytechnic reports ICT laboratories as part of its general campus facilities, used for hands-on training in ICT-related courses. Lab-specific details for the Computer Science department (number of labs, hardware/software available, access hours) are Information Not Available — confirm with the department.",
+    "keywords": ["computer lab", "ict lab", "laboratory"],
+    "related_topics": ["Campus Facilities"],
+    "source": "https://naijadirectory.org/listing/gateway-ict-polytechnic-saapade/",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "dept-005",
+    "category": "department",
+    "title": "Related Programme: Computer Engineering",
+    "content": "Gateway ICT Polytechnic also runs a separate HND Computer Engineering programme (distinct from Computer Science), alongside Electrical/Electronics Engineering with Electronics & Telecom, and Power & Machines options. Students sometimes confuse these — Computer Science and Computer Engineering are administered as separate HND programmes.",
+    "keywords": ["computer engineering", "electrical electronics engineering", "related programmes"],
+    "related_topics": ["Computer Science at Gateway ICT Polytechnic"],
+    "source": "https://myschool.ng/news/gateway-ict-polytechnic-saapade-hnd-admission-form-for-2024-2025-session",
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "dept-006",
+    "category": "department",
+    "title": "Student Organizations",
+    "content": "Information Not Available specifically for Computer Science. The Polytechnic reports an active general Student Union and various academic/social clubs and societies campus-wide. A Computer Science-specific student association may exist but was not confirmed in public sources — ask current students or the department.",
+    "keywords": ["student union", "clubs", "societies", "computer science students association"],
+    "related_topics": ["Computer Science at Gateway ICT Polytechnic"],
+    "source": "https://naijadirectory.org/listing/gateway-ict-polytechnic-saapade/",
+    "last_updated": "2026-07-14"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sec-001",
+    "category": "Cybersecurity",
+    "topic": "Authentication vs Authorization",
+    "difficulty": "beginner",
+    "content": "Authentication answers 'who are you?' — verifying identity, typically via a password, token, or biometric. Authorization answers 'what are you allowed to do?' — checking permissions after identity is confirmed. The two are often confused but distinct: a logged-in (authenticated) user might still be denied (unauthorized) access to an admin page. Modern web apps commonly authenticate with a login flow that issues a token (like a JWT), then authorize each request by checking that token's associated role/permissions against what the requested action needs.",
+    "example": "Authentication: user logs in with email + password → server verifies password hash matches → issues an access token.\n\nAuthorization: user (now authenticated) requests DELETE /users/42 → server checks their role is 'super_administrator' before allowing it, even though they're logged in.",
+    "quiz": [
+      {"type": "mcq", "question": "Which question does authorization answer?", "options": ["Who are you?", "What are you allowed to do?", "Where are you connecting from?", "How long have you been logged in?"], "answer": "What are you allowed to do?"},
+      {"type": "true_false", "question": "A user can be authenticated but still not authorized to perform a specific action.", "answer": true}
+    ],
+    "keywords": ["authentication", "authorization", "jwt", "rbac", "login"],
+    "related_topics": ["Hashing", "Web Security"],
+    "references": ["OWASP Authentication Cheat Sheet — owasp.org"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "sec-002",
+    "category": "Cybersecurity",
+    "topic": "Hashing vs Encryption",
+    "difficulty": "intermediate",
+    "content": "Hashing is a one-way function: it transforms input into a fixed-size output (a hash), and there's no way to reverse it back to the original input. Passwords should be hashed (with a slow, salted algorithm like bcrypt), never stored in plain text — if the database leaks, attackers get hashes, not passwords. Encryption is two-way: data is transformed with a key, and can be decrypted back to the original with the right key. Use encryption when you need to recover the original data later (like encrypting a file); use hashing when you only ever need to verify a match (like checking a password at login) without ever needing the original value back.",
+    "example": "# Hashing a password (one-way, using bcrypt)\nimport bcrypt\nhashed = bcrypt.hashpw(b\"mypassword\", bcrypt.gensalt())\n# Verifying later: bcrypt.checkpw(b\"mypassword\", hashed) → True\n# There is no 'bcrypt.decrypt()' — hashing is one-way by design.",
+    "quiz": [
+      {"type": "mcq", "question": "Which is reversible with the right key?", "options": ["Hashing", "Encryption", "Both", "Neither"], "answer": "Encryption"},
+      {"type": "short_answer", "question": "Why should passwords be hashed rather than encrypted?", "answer": "You never need to recover the original password — only verify a match — so a one-way hash is safer: even the system operator can't retrieve the plaintext password, and a database leak doesn't expose it directly."}
+    ],
+    "keywords": ["hashing", "encryption", "bcrypt", "password security"],
+    "related_topics": ["Authentication vs Authorization"],
+    "references": ["OWASP Password Storage Cheat Sheet — owasp.org"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "sec-003",
+    "category": "Cybersecurity",
+    "topic": "OWASP Top 10 (Overview)",
+    "difficulty": "intermediate",
+    "content": "The OWASP Top 10 is a regularly updated list of the most critical web application security risks, maintained by the Open Web Application Security Project. Notable recurring entries include: Injection (untrusted input executed as code, e.g. SQL injection), Broken Authentication (weak login/session handling), Sensitive Data Exposure (unencrypted sensitive data), Broken Access Control (users able to act outside their permissions), and Security Misconfiguration (default credentials, verbose error messages leaking internals). It's a widely-referenced baseline for what to check for in any student or professional project handling user data.",
+    "example": "SQL injection example (what NOT to do):\nquery = f\"SELECT * FROM users WHERE email = '{user_input}'\"\n# If user_input is: ' OR '1'='1\n# The query becomes: SELECT * FROM users WHERE email = '' OR '1'='1'\n# → returns all users, bypassing the intended filter.\n\nFix: use parameterized queries / an ORM instead of string-formatting SQL.",
+    "quiz": [
+      {"type": "mcq", "question": "What OWASP risk does building SQL queries with raw string formatting expose you to?", "options": ["Broken Access Control", "Injection", "Security Misconfiguration", "Sensitive Data Exposure"], "answer": "Injection"},
+      {"type": "practical", "question": "What's the standard fix for SQL injection risk?", "answer": "Use parameterized queries or an ORM (which parameterizes automatically) instead of concatenating/formatting user input directly into SQL strings."}
+    ],
+    "keywords": ["owasp", "sql injection", "web security", "broken access control"],
+    "related_topics": ["Authentication vs Authorization", "HTTP vs HTTPS"],
+    "references": ["OWASP Top 10 — owasp.org/www-project-top-ten"],
+    "last_updated": "2026-07-14"
+  }
+]

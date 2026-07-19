@@ -1,0 +1,51 @@
+[
+  {
+    "id": "prog-001",
+    "category": "Programming",
+    "topic": "Variables and Data Types",
+    "difficulty": "beginner",
+    "content": "A variable is a named location in memory that holds a value which can change while a program runs. Every variable has a data type, which determines what kind of value it can hold and what operations are valid on it. Common primitive types across languages include integers (whole numbers), floats/doubles (decimal numbers), strings (text), and booleans (true/false). Statically-typed languages (Java, C, C++) require you to declare a variable's type up front; dynamically-typed languages (Python, JavaScript) infer it at runtime, letting the same variable name even hold different types over its lifetime.",
+    "example": "Python (dynamic typing):\nage = 20          # int\nname = \"Ada\"      # str\ngpa = 4.5         # float\nis_active = True  # bool\n\nJava (static typing):\nint age = 20;\nString name = \"Ada\";\ndouble gpa = 4.5;\nboolean isActive = true;",
+    "quiz": [
+      {"type": "mcq", "question": "Which of these is a dynamically-typed language?", "options": ["Java", "C", "Python", "C++"], "answer": "Python"},
+      {"type": "true_false", "question": "In Java, you must declare a variable's type before using it.", "answer": true},
+      {"type": "short_answer", "question": "Name the four data types shown in the Python example.", "answer": "int, str, float, bool"}
+    ],
+    "keywords": ["variables", "data types", "int", "string", "boolean", "static typing", "dynamic typing"],
+    "related_topics": ["Functions", "Control Flow"],
+    "references": ["Python Language Reference — docs.python.org", "Oracle Java Tutorials — docs.oracle.com/javase/tutorial"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "prog-002",
+    "category": "Programming",
+    "topic": "Functions",
+    "difficulty": "beginner",
+    "content": "A function is a reusable, named block of code that performs a specific task. Functions take zero or more parameters as input and may return a value. Breaking a program into functions avoids repeating code, makes programs easier to test (test one function at a time), and makes intent clearer — a well-named function documents what it does without needing a comment. Parameters are local to the function; variables declared inside a function generally don't exist outside it (this is called scope).",
+    "example": "def calculate_average(scores):\n    return sum(scores) / len(scores)\n\nresult = calculate_average([70, 85, 90])\nprint(result)  # 81.66666666666667",
+    "quiz": [
+      {"type": "mcq", "question": "What does 'scope' refer to in the context of functions?", "options": ["The function's return type", "Where a variable is accessible", "The number of parameters", "The function's execution speed"], "answer": "Where a variable is accessible"},
+      {"type": "practical", "question": "Write a function `is_even(n)` that returns True if n is even.", "answer": "def is_even(n):\n    return n % 2 == 0"}
+    ],
+    "keywords": ["functions", "parameters", "return value", "scope", "reusability"],
+    "related_topics": ["Variables and Data Types", "Recursion"],
+    "references": ["Python Language Reference — docs.python.org"],
+    "last_updated": "2026-07-14"
+  },
+  {
+    "id": "prog-003",
+    "category": "Programming",
+    "topic": "Exception Handling",
+    "difficulty": "intermediate",
+    "content": "Exception handling lets a program respond to runtime errors (like dividing by zero, or a file that doesn't exist) without crashing. Most languages use a try/catch (or try/except) structure: code that might fail goes in the try block, and code to handle the failure goes in the catch/except block. This separates 'normal' logic from error-handling logic, and lets you fail gracefully — showing a useful message or falling back to a default, instead of the whole program stopping.",
+    "example": "try:\n    result = 10 / 0\nexcept ZeroDivisionError:\n    print(\"Cannot divide by zero\")\nfinally:\n    print(\"This always runs\")",
+    "quiz": [
+      {"type": "mcq", "question": "Which block always runs, whether or not an exception occurred?", "options": ["try", "except", "finally", "raise"], "answer": "finally"},
+      {"type": "true_false", "question": "Catching a broad exception type (like `Exception`) is generally better practice than catching a specific one.", "answer": false}
+    ],
+    "keywords": ["exceptions", "try catch", "error handling", "debugging"],
+    "related_topics": ["Debugging", "Functions"],
+    "references": ["Python Language Reference — docs.python.org"],
+    "last_updated": "2026-07-14"
+  }
+]

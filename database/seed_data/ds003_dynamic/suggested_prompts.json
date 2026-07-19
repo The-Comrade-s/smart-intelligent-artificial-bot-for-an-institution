@@ -1,0 +1,14 @@
+[
+  {"prompt": "Explain Binary Search.", "category": "academic"},
+  {"prompt": "Generate five Operating System questions.", "category": "academic"},
+  {"prompt": "Who is the Head of Department?", "category": "department"},
+  {"prompt": "How do I register my courses?", "category": "department"},
+  {"prompt": "Show current announcements.", "category": "department"},
+  {"prompt": "Explain Database Normalization.", "category": "academic"},
+  {"prompt": "Generate a Python quiz.", "category": "academic"},
+  {"prompt": "What is SIWES?", "category": "department"},
+  {"prompt": "Explain Compiler vs Interpreter.", "category": "academic"},
+  {"prompt": "What courses are offered in ND II?", "category": "department"},
+  {"prompt": "What's on this week's academic calendar?", "category": "department"},
+  {"prompt": "Give me tips for studying Data Structures.", "category": "academic"}
+]

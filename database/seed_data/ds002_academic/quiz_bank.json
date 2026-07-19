@@ -1,0 +1,24 @@
+{
+  "description": "Consolidated quiz bank aggregating the quiz questions embedded in each subject file under ds002_academic/. Organized by difficulty for quick retrieval when a student asks COSIB to 'generate a quiz' on a topic or difficulty level.",
+  "easy": [
+    {"source_topic": "Variables and Data Types", "type": "mcq", "question": "Which of these is a dynamically-typed language?", "options": ["Java", "C", "Python", "C++"], "answer": "Python"},
+    {"source_topic": "Stacks and Queues", "type": "mcq", "question": "Which structure is LIFO?", "options": ["Queue", "Stack", "Array", "Linked List"], "answer": "Stack"},
+    {"source_topic": "HTTP vs HTTPS", "type": "mcq", "question": "What does HTTPS add on top of HTTP?", "options": ["Faster loading", "TLS encryption", "More HTTP methods", "Better caching"], "answer": "TLS encryption"},
+    {"source_topic": "Boolean Algebra and Logic Gates", "type": "mcq", "question": "When is 'A AND B' true?", "options": ["When A is true", "When B is true", "Only when both A and B are true", "When either is true"], "answer": "Only when both A and B are true"},
+    {"source_topic": "Authentication vs Authorization", "type": "true_false", "question": "A user can be authenticated but still not authorized to perform a specific action.", "answer": true}
+  ],
+  "medium": [
+    {"source_topic": "Big O Notation", "type": "mcq", "question": "What is the time complexity of binary search on a sorted array?", "options": ["O(1)", "O(n)", "O(log n)", "O(n²)"], "answer": "O(log n)"},
+    {"source_topic": "Database Normalization", "type": "mcq", "question": "What does 1NF require?", "options": ["No duplicate tables", "Atomic column values and unique rows", "A foreign key on every table", "No indexes"], "answer": "Atomic column values and unique rows"},
+    {"source_topic": "IP Addressing", "type": "mcq", "question": "How many bits does an IPv4 address use?", "options": ["16", "32", "64", "128"], "answer": "32"},
+    {"source_topic": "Processes and Threads", "type": "mcq", "question": "What do threads in the same process share?", "options": ["Nothing", "Memory space", "Only the CPU", "Separate stacks only"], "answer": "Memory space"},
+    {"source_topic": "Hashing vs Encryption", "type": "mcq", "question": "Which is reversible with the right key?", "options": ["Hashing", "Encryption", "Both", "Neither"], "answer": "Encryption"},
+    {"source_topic": "SDLC Models: Waterfall vs Agile", "type": "mcq", "question": "Which model delivers working increments in short, repeated cycles?", "options": ["Waterfall", "Agile/Scrum", "Both equally", "Neither"], "answer": "Agile/Scrum"}
+  ],
+  "hard": [
+    {"source_topic": "Deadlocks", "type": "mcq", "question": "Which is NOT one of the four necessary conditions for deadlock?", "options": ["Mutual exclusion", "Hold and wait", "Preemption", "Circular wait"], "answer": "Preemption"},
+    {"source_topic": "Virtual Memory", "type": "mcq", "question": "What structure does the OS use to map virtual addresses to physical addresses?", "options": ["Page table", "Stack frame", "Routing table", "Symbol table"], "answer": "Page table"},
+    {"source_topic": "Indexes", "type": "mcq", "question": "What's the main tradeoff of adding an index?", "options": ["Faster reads, slower writes", "Faster writes, slower reads", "No tradeoff", "Reduces storage"], "answer": "Faster reads, slower writes"},
+    {"source_topic": "Neural Networks (Basics)", "type": "mcq", "question": "What algorithm adjusts a neural network's weights during training?", "options": ["Binary search", "Backpropagation", "Quicksort", "Normalization"], "answer": "Backpropagation"}
+  ]
+}

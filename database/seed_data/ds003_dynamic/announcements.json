@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Welcome to the 2025/2026 Academic Session",
+    "content": "The Computer Science Department welcomes all returning and newly admitted students to the 2025/2026 session. Course registration opens on the student portal — check your department notice board for the exact deadline this semester.",
+    "audience": "all",
+    "priority": "normal",
+    "status": "published",
+    "is_pinned": true
+  },
+  {
+    "title": "SIWES Orientation for ND II Students",
+    "content": "All ND II Computer Science students proceeding to SIWES (Student Industrial Work Experience Scheme) should attend the orientation session at the department. Bring your ND II result slip and a valid means of identification.",
+    "audience": "student",
+    "priority": "high",
+    "status": "published",
+    "is_pinned": true
+  },
+  {
+    "title": "HND I Course Registration Deadline Approaching",
+    "content": "HND I Computer Science students are reminded to complete course registration on the student portal before the deadline. Late registration may attract a penalty fee — see the Bursary for details.",
+    "audience": "student",
+    "priority": "urgent",
+    "status": "published",
+    "is_pinned": false
+  },
+  {
+    "title": "Department Seminar: Introduction to Cloud Computing",
+    "content": "The department is hosting a seminar on cloud computing fundamentals, open to all Computer Science and Computer Engineering students. Attendance counts toward continuous assessment for CSC-related courses this semester.",
+    "audience": "student",
+    "priority": "normal",
+    "status": "published",
+    "is_pinned": false
+  },
+  {
+    "title": "Examination Timetable Released",
+    "content": "The semester examination timetable has been released. Check the student portal for your specific exam dates, venues, and seating arrangements.",
+    "audience": "all",
+    "priority": "high",
+    "status": "published",
+    "is_pinned": false
+  },
+  {
+    "title": "Lecturers: Continuous Assessment Score Submission",
+    "content": "All lecturers are reminded to submit continuous assessment scores through the staff portal before the end of the semester examination period.",
+    "audience": "lecturer",
+    "priority": "normal",
+    "status": "published",
+    "is_pinned": false
+  }
+]
