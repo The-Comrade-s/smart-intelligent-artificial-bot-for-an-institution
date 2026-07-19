@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Uploads (runtime data, not committed)
+uploads/documents/*
+uploads/images/*
+uploads/pdfs/*
+!uploads/**/.gitkeep
+
+# Logs
+*.log
